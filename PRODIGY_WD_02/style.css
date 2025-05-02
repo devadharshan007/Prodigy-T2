@@ -1,0 +1,81 @@
+/* Background with Animated Gradient */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism Effect */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Stopwatch Display */
+.stopwatch {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.buttons button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Button Colors */
+#start {
+    background: linear-gradient(135deg, #1de9b6, #1dc4e9);
+    color: white;
+}
+#pause {
+    background: linear-gradient(135deg, #ff9f43, #ff6f61);
+    color: white;
+}
+#reset {
+    background: linear-gradient(135deg, #e84118, #c23616);
+    color: white;
+}
+
+/* Button Hover Effects */
+#start:hover {
+    box-shadow: 0 0 15px #1de9b6;
+}
+#pause:hover {
+    box-shadow: 0 0 15px #ff9f43;
+}
+#reset:hover {
+    box-shadow: 0 0 15px #e84118;
+}
